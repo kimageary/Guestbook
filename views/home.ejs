@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me!</title>
+    <link rel="stylesheet" href="styles/home.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <div id="contact-form">
+    <h1>Contact Form</h1>
+    <form method="post" action="confirm" id="contact-form">
+        <div id="intro-questions">
+            <div class="form-group">
+                <label for="fname">First Name 
+                    <p class="err" id="fname-err">Field is required</p></label> 
+                <input type="text" id="fname" name="first_name">
+            </div>
+
+
+            <div class="form-group">
+                <label for="lname">Last Name 
+                    <p class="err" id="lname-err">Field is required</p>
+                </label>
+                <input type="text" id="lname" name="last_name">
+            </div>
+
+            <div class="form-group">
+                <label for="job">Job Title 
+                    <p class="err" id="job-err">Field is required</p>
+                </label>
+                <input type="text" id="job" name="job_title">
+            </div>
+
+            <div class="form-group">
+                <label for="company">Company 
+                    <p class="err" id="company-err">Field is required</p>
+                </label>
+                <input type="text" id="company" name="company">
+            </div>
+
+            <div class="form-group">
+                <label for="linkedin">LinkedIn URL 
+                    <p class="err" id="linkedIn-err">Field is required</p>
+                    <p class="err" id="linkedIn-err-two">Invalid Format</p>
+                </label>
+                <input type="text" id="linkedin" name="linkedIN">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address 
+                    <p class="err" id="email-err">Field is required</p>
+                    <p class="err" id="email-err-format">Invalid Format</p>
+                </label>
+                <input type="text" id="email" name="email">
+            </div>
+        </div>
+
+        <div id="meet-questions">
+            <div class="form-group">
+                <label for="meet-options">How did we meet? 
+                    <p class="err" id="options-err">Please select an option</p>
+                </label>
+                <select id="meet-options" name="meet_options">
+                    <option value="select" name="invalid">Select an Option</option>
+                    <option value="meetup" name="meetup">Meetup</option>
+                    <option value="job-fair" name="job_fair">Job Fair</option>
+                    <option value="school" name="school">School</option>
+                    <option value="other" name="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group" id ="other-specification">
+                <label for="other-text">Other (please specify)</label>
+                <input type="text" id="other-text" name="other">
+            </div>
+            
+        </div>
+
+        <div id="message-box">
+            <label for="message">Message</label>
+            <textarea rows="5" cols="40" name="message" spellcheck="true" id="message"></textarea>
+        </div>
+
+        <div id="email-info">
+            <label>Choose an email format: </label>
+            <input type="radio" id="html" name="format">
+            <label for="html">HTML</label>
+            <input type="radio" id="text" name="format">
+            <label for="text">Text</label><br>
+        </div>
+        <div id="mailing-box">
+            <label>
+                <input type="checkbox" id="mailing-list" name="mailing-list">
+                Add me to your mailing list
+            </label>
+        </div>
+        <button class ="form" type="submit"name="button" value="edit">Submit</button>
+    </form>
+    </div>
+
+</body>
+</html>
